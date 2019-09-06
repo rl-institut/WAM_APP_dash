@@ -34,6 +34,8 @@ from django_plotly_dash.views import add_to_session
 
 from .views import dash_example_1_view, session_state_view
 
+app_name = 'WAM_APP_dash'
+
 urlpatterns = [
     url('^$', TemplateView.as_view(template_name='index.html'), name="home"),
     url('^demo-one$', TemplateView.as_view(template_name='demo_one.html'), name="demo-one"),
